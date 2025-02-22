@@ -68,15 +68,15 @@
           display: inline-block;
       }
 
-      /* Dropdown content (hidden by default) */
+      /* Remove background and set padding for dropdown */
       .dropdown-content {
           display: none;
           position: absolute;
-          background-color: #f9f9f9;
           min-width: 200px;
           box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
           padding: 10px;
           z-index: 1;
+          background-color: transparent;  /* Removed the background */
       }
 
       /* Show dropdown on hover */
@@ -99,14 +99,16 @@
           background-color: #f0f0f0;
       }
 
-      /* Link style */
+      /* Style for Mission link */
       .dropdown a {
           text-decoration: none;
           color: black;
           font-size: 24px;
           font-weight: bold;
+          text-transform: uppercase;  /* Ensures Mission is always in uppercase */
       }
 
+      /* Style for Mission link hover */
       .dropdown a:hover {
           background-color: #f0f0f0;
           border-radius: 5px;
@@ -117,8 +119,8 @@
     <h1>Art + Plus Technology Foundation</h1>
     <div class="header-container">
         <div class="dropdown">
-            <!-- Mission dropdown that shows when hovering -->
-            <a href="#" class="dropdown">Mission</a>
+            <!-- Mission link that turns all text to uppercase -->
+            <a href="#" class="dropdown">MISSION</a>
             <!-- Dropdown content with a link to a new page -->
             <div class="dropdown-content">
                 <a href="how_we_accomplish_our_mission.html">How We Accomplish Our Mission</a>
