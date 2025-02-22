@@ -13,19 +13,6 @@
   <!-- Meta Keywords (optional) -->
   <meta name="keywords" content="art, technology, non-profit, innovation, creative, foundation, art and tech, digital art, community empowerment" />
 
-  <!-- Open Graph Tags for Social Sharing -->
-  <meta property="og:title" content="Art Plus Technology Foundation" />
-  <meta property="og:description" content="The Art Plus Technology Foundation empowers communities through the integration of art and technology, fostering creativity and innovation." />
-  <meta property="og:image" content="/images/foundation-banner.jpg" /> <!-- Replace with an image URL -->
-  <meta property="og:url" content="https://www.artplustechfoundation.com" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter Card Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Art & Technology Foundation | Empowering Creative Innovation" />
-  <meta name="twitter:description" content="Empowering communities through the fusion of art and technology. Join our mission to inspire innovation and creativity worldwide." />
-  <meta name="twitter:image" content="/images/foundation-banner.jpg" /> <!-- Replace with an image URL -->
-
   <!-- Structured Data (Schema Markup) -->
   <script type="application/ld+json">
     {
@@ -34,33 +21,13 @@
       "name": "Art Plus Technology Foundation",
       "url": "https://www.artplustechfoundation.org",
       "logo": "https://www.artandtechnologyfoundation.org/logo.png",
-      "description": "A non-profit organization that fosters the creative integration of art and technology to inspire innovation and community development.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "123 Innovation Street",
-        "addressLocality": "Cityville",
-        "addressRegion": "State",
-        "postalCode": "12345",
-        "addressCountry": "Country"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+1-123-456-7890",
-        "contactType": "customer service",
-        "areaServed": "Worldwide",
-        "availableLanguage": "English"
-      },
-      "sameAs": [
-        "https://www.facebook.com/artandtechnologyfoundation",
-        "https://www.twitter.com/arttechfoundation",
-        "https://www.instagram.com/artandtechfoundation"
-      ]
+      "description": "A non-profit organization that fosters the creative integration of art and technology to inspire innovation and community development."
     }
   </script>
 
-  <!-- Robots.txt Meta Tag (if you're using it on a dynamic site) -->
+  <!-- Robots.txt Meta Tag -->
   <meta name="robots" content="index, follow" />
-  
+
   <style>
       /* Ensure the body takes full height of the screen */
       html, body {
@@ -94,12 +61,47 @@
           align-items: center;
           gap: 20px;
       }
+
+      /* Dropdown menu styles */
+      .dropdown {
+          position: relative;
+          display: inline-block;
+      }
+
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 200px;
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+          padding: 10px;
+          z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+
+      .dropdown-content p {
+          margin: 10px 0;
+      }
   </style>
 </head>
 <body>
     <h1>Art + Plus Technology Foundation</h1>
     <div class="header-container">
-        <h2>Mission</h2>
+        <div class="dropdown">
+            <h2>Mission</h2>
+            <div class="dropdown-content">
+                <p>We accomplish our mission by:</p>
+                <ul>
+                    <li>Providing art and technology workshops in underserved communities.</li>
+                    <li>Fostering creativity through collaborative projects that integrate art with technology.</li>
+                    <li>Empowering youth through mentorship programs that combine artistic skills and tech literacy.</li>
+                    <li>Partnering with other organizations to expand access to innovative tools and resources.</li>
+                </ul>
+            </div>
+        </div>
         <h3>Donate</h3>
     </div>
 </body>
