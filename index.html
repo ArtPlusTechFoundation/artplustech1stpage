@@ -62,28 +62,18 @@
           gap: 20px;
       }
 
-      /* Dropdown menu styles */
-      .dropdown {
-          position: relative;
-          display: inline-block;
+      /* Link style */
+      .dropdown a {
+          text-decoration: none;
+          color: black;
+          padding: 10px 20px;
+          font-size: 24px;
+          font-weight: bold;
       }
 
-      .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f9f9f9;
-          min-width: 200px;
-          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-          padding: 10px;
-          z-index: 1;
-      }
-
-      .dropdown:hover .dropdown-content {
-          display: block;
-      }
-
-      .dropdown-content p {
-          margin: 10px 0;
+      .dropdown a:hover {
+          background-color: #f0f0f0;
+          border-radius: 5px;
       }
   </style>
 </head>
@@ -91,16 +81,8 @@
     <h1>Art + Plus Technology Foundation</h1>
     <div class="header-container">
         <div class="dropdown">
-            <h2>Mission</h2>
-            <div class="dropdown-content">
-                <p>We accomplish our mission by:</p>
-                <ul>
-                    <li>Providing art and technology workshops in underserved communities.</li>
-                    <li>Fostering creativity through collaborative projects that integrate art with technology.</li>
-                    <li>Empowering youth through mentorship programs that combine artistic skills and tech literacy.</li>
-                    <li>Partnering with other organizations to expand access to innovative tools and resources.</li>
-                </ul>
-            </div>
+            <!-- Mission link that redirects to a new page -->
+            <a href="how_we_accomplish_our_mission.html">Mission</a>
         </div>
         <h3>Donate</h3>
     </div>
