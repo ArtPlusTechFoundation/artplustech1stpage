@@ -1,132 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Title Tag -->
-  <title>Art Plus Technology Foundation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art + Technology Foundation</title>
+    <style>
+        body {
+            font-family: 'SF Pro', sans-serif;
+        }
 
-  <!-- Meta Description -->
-  <meta name="description" content="The Art + Technology Foundation is a non-profit organization that promotes art and technology literacy to inspire innovation and creativity in communities worldwide." />
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0 0 20px;
+            color: #006400; /* Dark Green */
+        }
 
-  <!-- Meta Keywords (optional) -->
-  <meta name="keywords" content="art, technology, non-profit, innovation, creative, foundation, art and tech, digital art, community empowerment" />
+        h2, h3 {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
 
-  <!-- Structured Data (Schema Markup) -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "NonProfitOrganization",
-      "name": "Art Plus Technology Foundation",
-      "url": "https://www.artplustechfoundation.org",
-      "logo": "https://www.artandtechnologyfoundation.org/logo.png",
-      "description": "A non-profit organization that fosters the creative integration of art and technology to inspire innovation and community development."
-    }
-  </script>
+        .header-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
 
-  <!-- Robots.txt Meta Tag -->
-  <meta name="robots" content="index, follow" />
+        /* Dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
 
-  <style>
-      /* Ensure the body takes full height of the screen */
-      html, body {
-          height: 100%;
-          margin: 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          background-color: white;
-          font-family: 'SF Pro', sans-serif;
-      }
+        /* Remove background and set padding for dropdown */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            z-index: 1;
+            background-color: transparent; /* Removed the background */
+        }
 
-      h1 {
-          font-size: 36px;
-          font-weight: bold;
-          text-transform: uppercase;
-          text-align: center;
-          margin: 0 0 20px;
-          color: #006400; /* Dark Green */
-      }
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
 
-      h2, h3 {
-          font-size: 24px;
-          font-weight: bold;
-          text-transform: uppercase;
-      }
+        /* Style the links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+        }
 
-      .header-container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 20px;
-      }
+        /* Change background color on hover */
+        .dropdown-content a:hover {
+            background-color: #f0f0f0;
+        }
 
-      /* Dropdown container */
-      .dropdown {
-          position: relative;
-          display: inline-block;
-      }
+        /* Style for navigation links */
+        .dropdown a, .nav-link {
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase; /* Ensures text is always in uppercase */
+        }
 
-      /* Remove background and set padding for dropdown */
-      .dropdown-content {
-          display: none;
-          position: absolute;
-          min-width: 200px;
-          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-          padding: 10px;
-          z-index: 1;
-          background-color: transparent;  /* Removed the background */
-      }
-
-      /* Show dropdown on hover */
-      .dropdown:hover .dropdown-content {
-          display: block;
-      }
-
-      /* Style the links inside the dropdown */
-      .dropdown-content a {
-          color: black;
-          padding: 10px 20px;
-          font-size: 20px;
-          font-weight: bold;
-          text-decoration: none;
-          display: block;
-      }
-
-      /* Change background color on hover */
-      .dropdown-content a:hover {
-          background-color: #f0f0f0;
-      }
-
-      /* Style for Mission link */
-      .dropdown a {
-          text-decoration: none;
-          color: black;
-          font-size: 24px;
-          font-weight: bold;
-          text-transform: uppercase;  /* Ensures Mission is always in uppercase */
-      }
-
-      /* Style for Mission link hover */
-      .dropdown a:hover {
-          background-color: #f0f0f0;
-          border-radius: 5px;
-      }
-  </style>
+        /* Style for navigation links hover */
+        .dropdown a:hover, .nav-link:hover {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Art + Plus Technology Foundation</h1>
+    <h1>Art + Technology Foundation</h1>
     <div class="header-container">
         <div class="dropdown">
-            <!-- Mission link updated to direct to the new page -->
             <a href="https://mission.artplustechfoundation.com" class="dropdown">MISSION</a>
-            <!-- Dropdown content with a link to a new page -->
             <div class="dropdown-content">
                 <a href="how_we_accomplish_our_mission.html">How We Accomplish Our Mission</a>
             </div>
         </div>
+        <a href="https://programs.artplustechfoundation.com" class="nav-link">PROGRAMS</a>
         <h3>Donate</h3>
     </div>
 </body>
